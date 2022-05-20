@@ -9,6 +9,8 @@
                 "-g",
                 "*.c",
                 "-lgmp",
+                "-lcurl",
+                "-ljson-c",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
