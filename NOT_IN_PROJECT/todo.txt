@@ -1,3 +1,6 @@
 1) Create a cleanup function for requests.c
-2) Use curses and color output if possible !
-3) Find a solution for API_KEY[1024]
+2) Find a solution for API_KEY[1024]
+3) Curl info about sat
+4) ask which sat to use
+5) Better UI
+6) CLEAN THE FUCKING CODE It'S A BIG MESSSSS
