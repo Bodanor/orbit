@@ -3,3 +3,5 @@ IDEA : Retrieve info from API, manually calculate all infos given from API
 SOURCE API : https://www.n2yo.com/api/#tle
 
 The main Idea would be to also retrive machine location and make requests from those locations then compute all possible informations.
+
+Use curses and color output if possible !
