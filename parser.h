@@ -5,5 +5,5 @@
 
 
 struct json_object *returnObject(char *buffer, const char *key);
-struct json_object *json_object_get_with_keys( struct json_object *obj, const char *keys[] );
+struct json_object *returnObjectFromList(json_object *obj_list, const char *key);
 #endif

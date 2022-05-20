@@ -6,7 +6,7 @@
 #include "constant.h"
 #include "orbit.h"
 #include "requests.h"
-#include "parcer.h"
+#include "parser.h"
 
 int main()
 {
@@ -33,9 +33,9 @@ int main()
     {
         data = call_API(API_KEY);
         asked = returnObject(data->memory, "positions");
-        asked = json_object_array_get_idx(asked, 0);
-        json_object_object_get_ex(asked, "sataltitude", &asked);
-        if (data != NULL)
+        asked = returnObjectFromList(asked, "sataltitude");
+
+        if (data != NULL && asked != NULL)
         {
             test = json_object_get_string(asked);
             flag = mpf_set_str(distance, test, 10);
